@@ -28,8 +28,8 @@ pipeline {
 
   stage('Build docker image') {
    steps {
-    sh 'docker build --tag=hrportal:latest .'
-    sh 'docker push xsantq/hrportal-build:latest'
+    sh 'docker build --tag=xsantq/hrportal:latest .'
+    sh 'docker push xsantq/hrportal:latest'
    }
   }
  }
